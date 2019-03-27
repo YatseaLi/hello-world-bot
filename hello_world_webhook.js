@@ -1,9 +1,9 @@
 /*****************************************************
- * This is a hello world sample of web hook implementation
- * for a SAP Conversation Bot which triggers a webhook as 
+ * This is a hello world sample of webhook implementation
+ * for a SAP Conversation Bot with a webhook trigger as 
  * action. This simple sample how you reply with text 
  * message and a list template message. The nlp result by 
- * SAP Conversational AI is sent as the request body, in
+ * SAP Conversational AI is sent in the request body, in
  * which you can know about the intent and entities etc as 
  * a result of your bot training. Before reply to user, 
  * a service fulfilment should be accomplished according to 
@@ -17,6 +17,10 @@
  * etc, and respond to the end user with the order number 
  * just placed.
  * 
+ * The source code is under MIT license. Please kindly check the LICENSE.
+ * Here is to highlight that THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED. Therefore no support available.
+ * 
  * Author: Yatsea Li
  * Created on Feb 20 2019
  * All right reserved by SAP SE
@@ -25,7 +29,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express()
-const port = process.event.PORT || 5000
+const port = process.env.PORT || 5000
 app.use(bodyParser.json())
 
 app.post('/', (req, res) => {

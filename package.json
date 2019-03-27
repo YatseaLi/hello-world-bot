@@ -21,14 +21,7 @@
   "author": "Yatsea Li",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.17.0",
     "body-parser": "^1.18.2",
-    "cookie": "^0.3.1",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "fuse.js": "^3.2.1",
-    "node-cleanup": "^2.1.2",
-    "path": "^0.12.7"
+    "express": "^4.16.3"
   }
 }
